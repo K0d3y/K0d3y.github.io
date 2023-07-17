@@ -1,0 +1,44 @@
+h1{color:red;}
+
+.page{width:80vw;height:80vh;border:1px solid red}
+nav ul li{display:inline;}
+#page1{background:red}
+#page2{background:green}
+#page3{background:blue}
+
+/*for responsive menu*/
+#hamIcon{display:none;}
+@media screen and (max-width:800px){
+    nav ul li{display:block;} /*make a menu items vertical*/
+    #hamIcon{display: block;} /* unhide menu icon */
+    nav ul{display:none;} /*hide the menu item list*/
+}
+
+#ball {
+    background: cyan;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+    transition: border-radius 1s;
+}
+
+#ball:hover{
+    background: green;
+    border-radius: 25%;
+}
+
+@keyframes ballFrames { /*keyframes to change properties*/
+    0% {font-size: 0.4em;width:50px}
+    25% {font-size: 1em;width:80px}
+    50% {font-size: 2em;width:150px}
+    100% {font-size: 0.2em;width:50px}
+}
+
+.ballAnim{
+animation:ballFrames 1s; /*run animation for 1s*/
+}
