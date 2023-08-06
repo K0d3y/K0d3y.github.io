@@ -1,40 +1,115 @@
 <html>
   <head>
-    <title>The title of my page</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>All About Sword Making</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
   </head>
-
-  <h1>WebDev Week13</h1>
   
   <body>
-    <header>
-    <h1>Main Topic</h1>
-    </header>
-    <nav> <!--menu systtm-->
-      <button id = "hamIcon">Menu</button>
-      <ul>
-        <li><button id="page1btn">Sub Topic 1</button></li>
-        <li><button id="page2btn">Sub Topic 2</button></li>
-        <li><button id="page3btn">Sub Topic 3</button></li>
-      </ul>
-    </nav>
-    <div id="pagecontainer">
-      <div class="page" id="page1">
-      page 1 content
-      </div>
-      <div class="page" id="page2">
-      page 2 content
-      </div>
-      <div class="page" id="page3">
-      page 3 content
+    <div>
+      <section>
+        <img src="images/Forging_BG.jpg" alt="Sword Logo"/>
+      </section>
+
+      <div class="titleContainer">
+        <img class="titleImg" src="images/anvil.png" alt="Anvil Logo"/>
+        <div class="titleText">
+          <p>Sword 101</p>
+        </div>
       </div>
     </div>
-    <button id="leftBtn">Left</button>
-    <button id="rightBtn">Right</button>
-    <button id="upBtn">Up</button>
-    <button id="downBtn">Down</button>
-    <button id="resetBtn">Reset</button>
-    <div id="ball">Ball</div>
+
+    <div>
+      <hr>
+      <nav> <!--menu system-->
+        <button id = "hamIcon" class="navBtn">
+          <img class="dropdownMenuImg" src="images/menu.png" alt="dropdown menu"/>
+        </button>
+        <div class="navBtnGroup">
+          <button id="page1btn" class="navBtn">Your First Sword</button>
+          <button id="page2btn" class="navBtn">Types of Swords</button>
+          <button id="page3btn" class="navBtn">History of Forging</button>
+        </div>
+      </nav>
+      <hr>
+    </div>
+
+    <div class="page" id="page1">
+      <div class="ImgItem">
+        <div class="scene">
+          <div class="cube show-front">
+            <img class="cube__face cube__face--front" src="images/Forging1.jpg" alt="Anvil Logo"/>
+            <img class="cube__face cube__face--right" src="images/Forging2.jpg" alt="Anvil Logo"/>
+            <img class="cube__face cube__face--back" src="images/Forging3.jpg" alt="Anvil Logo"/>
+            <img class="cube__face cube__face--left" src="images/Forging4.jpg" alt="Anvil Logo"/>
+            <img class="cube__face cube__face--top" src="images/Forging5.jpg" alt="Anvil Logo"/>
+            <img class="cube__face cube__face--bottom" src="images/Forging6.jpg" alt="Anvil Logo"/>
+          </div>
+        </div>
+      </div>
+      <div id="Forge1" class="ForgeText TextItem">
+        Prepare your tools and materials such as a hammer, tongs and high carbon or damascus steel. 
+        You can either forge weld your own pattern welded steel, or buy your own. 
+        After you have gathered the materials, you can start to plan out the design of your sword. 
+        Starting with a simple design is usually the best way to master the fundamentals. 
+        Research traditional swords from history to gather inspiration and draw out your design on paper. 
+      </div>
+      <div id="Forge2" class="ForgeText TextItem">
+        Start your project with stock steel that is roughly the length of your final design. 
+        Grip the steel with a pair of tongs and heat it in a forge until the color of the steel turns yellow. 
+        Once it has reached temperature, remove your steel from the forge. 
+        Set the stock flat on your anvil and shape the corner into the shape of a sword using a hammer. 
+        Make sure to taper both sides of the steel evenly. 
+      </div>
+      <div id="Forge3" class="ForgeText TextItem">
+        Bevel the edges of your steel with a hammer to create a cutting edge on either side of the sword. 
+        Once you have hammered one side, flip the sword on the anvil and hammer the other side until both are even. 
+        Once you have the shape of your sword established, reheat it to normalize the steel. 
+        Grip the steel with your tongs and bring it up to non-magnetic temperature. 
+        Let it cool off at room temperature. 
+      </div>
+      <div id="Forge4" class="ForgeText TextItem">
+        Once all the red color has left the steel, place it back in the forge and repeat this process three times. 
+        Sand the sword to smooth out the edges on a belt sander or by hand. 
+        Once the sword has been beveled, normalized, and sanded, reheat it and dip it in oil until it reaches room temperature. 
+        This process is known as quenching and it hardens the steel to strengthen your sword. 
+        Make sure you transfer the blade from the fire to the quenching as quickly as possible. 
+        If you are too slow, the sword blade will not harden properly. 
+        Slowly reheat your quenched sword in a forge to a lower temperature. 
+        This will relax the brittleness and stress induced by the quenching process. 
+      </div>
+      <div id="Forge5" class="ForgeText TextItem">
+        The hilt is another word for a sword handle. 
+        It is usually made from leather, wire, or wood, and is fastened to the blade to provide ease while holding the sword. 
+        The pommel is a large fitting at the top of the hilt, and is usually made of metal. 
+        It ensures that the sword will not slip out of your hand, and also provides a weighted equilibrium. 
+        With a fine file and whetstone carefully sharpen your sword blade until you are satisfied.
+      </div>
+      <div id="Forge6" class="ForgeText TextItem">
+        After that, your first sword is complete!
+      </div>
+    </div>
+    <div class="page" id="page2">
+    page 2 content
+    </div>
+    <div class="page" id="page3">
+      Pattern welded steel swords date back to the first millennium B.C., with Celtic, African, Germanic, and Roman swords first exhibiting the method. 
+      Layered Damascus steel, which is a form of pattern welding, was also used in South Asia, and the Middle East during the Middle Ages. 
+      Chinese swordsmiths are credited with creating the technology that made its way to Korea and Japan, where swordsmiths developed innovative techniques and new weapons such as the katana. 
+      Between 1185–1333 A.D., Japan was under military rule. 
+      This became known as the “Golden era” of Japanese bladesmithing, as they became quick to develop new technology and mastery around swordsmithing out of the necessity of defense. 
+      With the Industrial Revolution came the development of advanced machines and swordsmithing technology. 
+      Traditional smithing methods became less common until resurging fairly recently. 
+      By the mid 20th century, bladesmithing had become a niche industry, kept alive by a small pool of bladesmiths. 
+      In the 1960s, bladesmith William Moran began to revive the ancient pattern welding process of forging Damascus steel. 
+      While the exact traditional methods were not recorded, Moran managed to teach himself the process and published a free booklet detailing the process. 
+      Ultimately, Moran made the swordsmithing process accessible to anyone who wanted to learn. 
+      He founded the American Bladesmith Society in 1976, further expanding the network and resources of both professional and hobbyist bladesmiths.
+    </div>
+    <div class="endbarGroup">
+      <div class="endbar">
+        <div class="endbarElement">test</div>
+      </div>
+    </div>
   </body>
   <footer>
     <script src="script.js"></script>
