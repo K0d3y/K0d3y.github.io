@@ -157,15 +157,27 @@ section img{
 .endbar{
     display: flex;
     flex-wrap: wrap;
-    margin: 0vh 20vw 3vh;
+    margin: 0vh 20vw 5vh;
 }
 .endbarElement{
     color: white;
+    flex: 2;
+    font-size:2vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 5px;
+    height: 5px;
+    text-align: center;
+}
+.endbarImg{
     flex: 1;
     font-size:2vh;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+}
+.endbarImgSize{
+    width: 50px;
+    height: auto;
 }
 
 /*for responsive menu*/
